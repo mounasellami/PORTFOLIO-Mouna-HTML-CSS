@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;100&display=swap");
+@font-face {
+  font-family: "The-Historia-Demo";
+  src: url("The-Historia-Demo.ttf.woff") format("woff"),
+    url("The-Historia-Demo.ttf.svg#The-Historia-Demo") format("svg"),
+    url("The-Historia-Demo.ttf.eot"),
+    url("The-Historia-Demo.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Start global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #eee;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: url("../res/sitebg.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: #eee;
+}
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+img {
+  width: 100%;
+}
+/*End global*/
+
+/*Start reusable*/
+/*End reusable*/
+
+/*Start header*/
+header {
+  width: 100%;
+  height: 100vh;
+}
+.top-nav {
+  width: 100%;
+  height: 100vh; /* view top-nav in all page */
+  position: fixed;
+  top: -100vh; /*vien landing-text in another page*/
+  background-color: #16162d;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  transition: all 650ms cubic-bezier(1, 0, 0, 1);
+}
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  margin: 0 2rem;
+}
+.nav-link {
+  font-family: "The Historia Demo", sans-serif;
+  font-size: 5rem;
+  padding: 1rem;
+}
+.nav-link:hover,
+.nav-link:focus {
+  background-clip: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text; /*change backgroundColor just for the text */
+  -webkit-text-fill-color: transparent; /*change backgroundColor just for the text */
+}
+.top-nav.open {
+  top: 0;
+  border-radius: initial;
+}
+.menu-toggler {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1700;
+  transition: transform 650ms ease-out;
+}
+.menu-toggler.open {
+  transform: rotate(-45deg);
+}
+.bar {
+  background: linear-gradient(to right, #ffe838, #fd57bf);
+  width: 100%;
+  height: 4px;
+  border-radius: 0.8rem;
+}
+.bar.half {
+  width: 50%;
+}
+.bar.start {
+  transform-origin: right; /* for animation */
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+.bar.end {
+  transform-origin: left; /* for animation */
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+/*End header*/
+
+/*Start about*/
+/*End about*/
+
+/*Start services*/
+/*End services*/
+
+/*Start portfolio*/
+/*End services*/
+
+/*Start timeline*/
+/*End timeline*/
+
+/*Start contact*/
+/*End contact*/
+
+/*Start footer*/
+/*End footer*/
+
+/*Start animations*/
+/*End animations*/
+
+/*Start media queries*/
+/*End media queries*/
